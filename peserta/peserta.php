@@ -158,7 +158,6 @@ include '../fungsi/fitur_notifikasi.php';
                     <tr>
                         <th>ID</th>
                         <th>Username</th>
-                        <th>Password</th>
                         <th>Role</th>
                         <th>Aksi</th>
                     </tr>
@@ -168,15 +167,6 @@ include '../fungsi/fitur_notifikasi.php';
                         <tr>
                             <td><?= $a['id_peserta']; ?></td>
                             <td><?= htmlspecialchars($a['username']); ?></td>
-                            <td>
-                                <span class="password-mask">********</span>
-                                <span class="password-real d-none">
-                                    <?= htmlspecialchars($a['password']); ?>
-                                </span>
-                                <button type="button" class="btn btn-sm btn-outline-secondary toggle-password">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </td>
                             <td><?= $a['role']; ?></td>
                             <td>
                                 <button class="btn btn-success btn-sm edit-button"
@@ -215,7 +205,6 @@ include '../fungsi/fitur_notifikasi.php';
                     <tr>
                         <th>ID</th>
                         <th>Username</th>
-                        <th>Password</th>
                         <th>Role</th>
                         <th>Aksi</th>
                     </tr>
@@ -225,14 +214,6 @@ include '../fungsi/fitur_notifikasi.php';
                         <tr>
                             <td><?= $u['id_peserta']; ?></td>
                             <td><?= htmlspecialchars($u['username']); ?></td>
-                            <td>
-                                <span class="password-mask">********</span>
-                                <span class="password-real d-none">
-                                    <?= htmlspecialchars($u['password']); ?>
-                                </span>
-                                <button type="button" class="btn btn-sm btn-outline-secondary toggle-password">
-                                    <i class="fas fa-eye"></i>
-                                </button>
                             </td>
                             <td><?= $u['role']; ?></td>
                             <td>
