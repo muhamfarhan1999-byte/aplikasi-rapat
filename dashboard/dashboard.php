@@ -31,7 +31,7 @@ include '../fungsi/fitur_notifikasi.php';
 
 <body class="bg-light-subtle" style="font-family: inter, sans-serif">
   <!-- Navbar Start -->
-  <div class="justify-content-between d-flex bg-blue-custom p-3 ps-4 position-relative" style="height: 60px; z-index: 1000;">
+  <div class="justify-content-between d-flex bg-blue-custom p-3 ps-4 fixed-top" style="height: 60px; z-index: 1000;">
     <!-- Left side -->
     <div>
       <a class="navbar-brand text-white fw-bold fs-5" href="#">
@@ -113,7 +113,7 @@ include '../fungsi/fitur_notifikasi.php';
   <!-- Layout Wrapper start-->
   <div class="d-flex " style="height: calc(100vh - 60px);">
     <!-- Sidebar start-->
-    <div class="bg-sidebar-custom text-white p-3" style="width: 20%">
+     <div class="bg-sidebar-custom text-white p-3 position-fixed"style="width: 20%; height: 100vh; top: 60px; left: 0; overflow-y: auto;">
       <h4 class="mb-4 text-center fw-bold">Menu</h4>
       <ul class="nav flex-column">
 
@@ -136,7 +136,7 @@ include '../fungsi/fitur_notifikasi.php';
 
     <!-- Main Content -->
     <!-- Greeting card start -->
-    <div class="p-4 overflow-x-hidden d-flex flex-column w-80">
+      <div class="p-4 overflow-y-auto overflow-x-hidden d-flex flex-column" style="margin-left: 20%; width: 85%; margin-top: 3%;">
       <div class="h-16 rounded bg-white justify-content-center shadow p-3">
         <h3 class="fs-4 c-custom-1 fw-bold">Selamat Datang, <?= ucwords(strtolower(htmlspecialchars($_SESSION['username']))); ?> 👋</h3>
         <p class="c-custom-2">Berikut daftar rapat anda hari ini dan yang akan datang.</p>
